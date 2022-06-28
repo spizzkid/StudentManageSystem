@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>mainPageServlet</servlet-name>
+        <servlet-class>com.example.web.mainPageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuAddServlet</servlet-name>
+        <servlet-class>com.example.web.StuAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuListServlet</servlet-name>
+        <servlet-class>com.example.web.StuListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuDeleteServlet</servlet-name>
+        <servlet-class>com.example.web.StuDeleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuUpdateServlet</servlet-name>
+        <servlet-class>com.example.web.StuUpdateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuUpdateSubmitServlet</servlet-name>
+        <servlet-class>com.example.web.StuUpdateSubmitServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuSearchByAgeServlet</servlet-name>
+        <servlet-class>com.example.web.StuSearchByAgeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>StuSearchByNameServlet</servlet-name>
+        <servlet-class>com.example.web.StuSearchByNameServlet</servlet-class>
+    </servlet>
+
+
+
+   <servlet-mapping>
+       <servlet-name>StuSearchByAgeServlet</servlet-name>
+       <url-pattern>/StuSearchByAgeServlet</url-pattern>
+   </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuSearchByNameServlet</servlet-name>
+        <url-pattern>/StuSearchByNameServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StuUpdateSubmitServlet</servlet-name>
+        <url-pattern>/StuUpdateSubmitServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuUpdateServlet</servlet-name>
+        <url-pattern>/StuUpdateServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mainPageServlet</servlet-name>
+        <url-pattern>/mainPageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuAddServlet</servlet-name>
+        <url-pattern>/StuAddServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuListServlet</servlet-name>
+        <url-pattern>/StuListServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StuDeleteServlet</servlet-name>
+        <url-pattern>/StuDeleteServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
